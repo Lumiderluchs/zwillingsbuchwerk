@@ -4,161 +4,218 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Zwillingsbuchwerk | Kinderbücher, Geschichten & besondere Buchwelten</title>
+  <title>Zwillingsbuchwerk | Kinderbücher, Adventsgeschichten & Geschichten aus dem Palast</title>
 
-  <meta name="description" content="Willkommen bei Zwillingsbuchwerk: liebevoll erzählte Kinderbücher über Freundschaft, Abenteuer, Wünsche, Traditionen und besondere Geschichten, die miteinander verbunden sein können.">
+  <meta name="description" content="Zwillingsbuchwerk von Bernadett Palfy: liebevoll illustrierte Kinderbücher, nostalgische Adventsgeschichten in 24 Tagen, Weihnachtsbräuche und fantasievolle Geschichten aus dem Palast.">
+
+  <meta name="keywords" content="Zwillingsbuchwerk, Bernadett Palfy, Kinderbücher, Kindergeschichten, Adventsgeschichten für Kinder, Adventskalender Geschichten, Weihnachtsgeschichten für Kinder, Vorlesegeschichten, Weihnachten Kinder, Weihnachtsbräuche, König Kinderbuch, Königin Kinderbuch, Prinz Kinderbuch, Prinzessin Kinderbuch">
 
   <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://lumiderluchs.github.io/zwillingsbuchwerk/">
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
-      color: #3d3028;
-      background: #fffaf2;
+      background: #fffaf0;
+      color: #3f3328;
       line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, #6f2337, #9b4050);
+      background: linear-gradient(135deg, #6f1d1b, #a53b2a);
       color: white;
       text-align: center;
-      padding: 75px 20px;
+      padding: 65px 20px;
     }
 
     header h1 {
-      font-size: clamp(2.5rem, 7vw, 5rem);
+      font-size: clamp(2.7rem, 8vw, 5rem);
       margin: 0;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
     }
 
     header p {
-      max-width: 760px;
+      max-width: 800px;
       margin: 18px auto 0;
       font-size: 1.25rem;
     }
 
     nav {
-      background: #f1e2c7;
+      background: #f0dfbd;
       text-align: center;
-      padding: 14px;
+      padding: 15px;
       position: sticky;
       top: 0;
       z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
     }
 
     nav a {
-      color: #5b2734;
+      color: #633a25;
       text-decoration: none;
       font-weight: bold;
-      margin: 0 12px;
+      margin: 5px 14px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #a32d25;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: auto;
     }
 
     section {
-      max-width: 1100px;
-      margin: auto;
       padding: 65px 22px;
     }
 
     h2 {
-      color: #702a3c;
-      font-size: 2.2rem;
+      color: #7b2421;
       text-align: center;
+      font-size: clamp(2rem, 5vw, 3rem);
       margin-top: 0;
+    }
+
+    h3 {
+      color: #6c3426;
+      font-size: 1.5rem;
     }
 
     .intro {
       text-align: center;
       max-width: 850px;
       margin: auto;
-      font-size: 1.12rem;
+      font-size: 1.15rem;
     }
 
     .highlight {
-      background: #f5ead7;
+      background: #f5e7c9;
       border-radius: 25px;
       padding: 35px;
       margin-top: 35px;
       text-align: center;
+      box-shadow: 0 5px 20px rgba(70,40,20,.08);
     }
 
     .books {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 28px;
-      margin-top: 35px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-top: 40px;
     }
 
     .book {
       background: white;
       border-radius: 22px;
-      padding: 28px;
-      box-shadow: 0 8px 25px rgba(60, 40, 30, 0.10);
-      text-align: center;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(65,45,25,.14);
+      padding-bottom: 28px;
     }
 
-    .book h3 {
-      color: #702a3c;
-      font-size: 1.35rem;
+    .book img {
+      width: 100%;
+      display: block;
     }
 
-    .label {
-      display: inline-block;
-      background: #efe0bd;
-      color: #63384a;
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: bold;
+    .book-content {
+      padding: 22px;
     }
 
     .button {
       display: inline-block;
-      margin-top: 15px;
-      background: #762d40;
+      background: #8e2824;
       color: white;
       text-decoration: none;
-      padding: 11px 20px;
+      padding: 13px 23px;
       border-radius: 30px;
       font-weight: bold;
+      margin-top: 12px;
     }
 
     .button:hover {
-      background: #57202f;
+      background: #641b19;
     }
 
-    .future {
-      background: #edf1e6;
+    .preview {
+      background: #f3e5c9;
     }
 
-    .quote {
-      max-width: 760px;
-      margin: 35px auto 0;
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.13);
+    }
+
+    .palace {
+      background: #edf4e5;
+    }
+
+    .coming {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .coming div {
+      background: white;
+      padding: 25px 18px;
+      border-radius: 18px;
       text-align: center;
-      font-size: 1.3rem;
-      font-style: italic;
-      color: #63384a;
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
+    }
+
+    .label {
+      display: inline-block;
+      background: #d9b768;
+      color: #4a3218;
+      padding: 5px 13px;
+      border-radius: 20px;
+      font-size: .9rem;
+      font-weight: bold;
     }
 
     footer {
-      background: #422c30;
-      color: #f9eee1;
+      background: #4d3025;
+      color: #fff8e9;
       text-align: center;
-      padding: 35px 20px;
+      padding: 38px 20px;
+    }
+
+    footer p {
+      margin: 5px;
     }
 
     @media (max-width: 600px) {
-      nav a {
-        display: inline-block;
-        margin: 5px 8px;
+      header {
+        padding: 45px 18px;
       }
 
-      header {
-        padding: 55px 18px;
+      section {
+        padding: 45px 16px;
+      }
+
+      .highlight {
+        padding: 25px 18px;
       }
     }
   </style>
@@ -166,193 +223,259 @@
 
 <body>
 
-<nav>
-  <a href="#willkommen">Willkommen</a>
-  <a href="#zwillingsbuecher">Zwillingsbücher</a>
-  <a href="#buecher">Bücher</a>
-  <a href="#demnaechst">Demnächst</a>
-</nav>
-
-<header id="willkommen">
+<header>
   <h1>Zwillingsbuchwerk</h1>
   <p>
-    Geschichten für Kinder, die ihren eigenen Weg gehen –
-    und manchmal auf ganz besondere Weise miteinander verbunden sind.
+    Kinderbücher voller Fantasie, Freundschaft, Traditionen,
+    kleiner Geheimnisse und großer Abenteuer.
   </p>
 </header>
 
-<section>
+<nav>
+  <a href="#willkommen">Willkommen</a>
+  <a href="#advent">Adventsbücher</a>
+  <a href="#palast">Im Palast</a>
+  <a href="#zwillingsbuecher">Zwillingsbücher</a>
+</nav>
+
+<main>
+
+<section id="willkommen">
   <h2>Willkommen bei Zwillingsbuchwerk</h2>
 
   <div class="intro">
     <p>
-      Hier entstehen Kinderbücher voller Freundschaft, Fantasie,
-      kleiner und großer Abenteuer, Wünsche, Entdeckungen
-      und besonderer Traditionen.
+      Willkommen in einer Kinderbuchwelt, in der Geschichten manchmal
+      ihre ganz eigene Schwester oder ihren ganz eigenen Bruder haben.
     </p>
 
     <p>
-      Manche Geschichten stehen ganz für sich.
-      Andere gehören zusammen wie Zwillinge:
-      eigenständig und doch durch ein unsichtbares Band verbunden.
+      <strong>Zwillingsbuchwerk</strong> steht für liebevoll erzählte und
+      illustrierte Kinderbücher von <strong>Bernadett Palfy</strong>:
+      zum Vorlesen, gemeinsamen Entdecken, Lachen und Erinnern.
+    </p>
+
+    <p>
+      Hier begegnen sich nostalgische Adventsgeschichten,
+      alte Weihnachtsbräuche, Freundschaft und kleine gute Taten ebenso
+      wie Könige, Königinnen, Prinzen und Prinzessinnen in
+      fantasievollen Geschichten aus dem Palast.
+    </p>
+  </div>
+
+  <div class="highlight" id="zwillingsbuecher">
+    <h3>Was sind Zwillingsbücher?</h3>
+    <p>
+      Zwei Geschichten können ganz verschieden sein und trotzdem
+      zusammengehören. Jede Geschichte steht für sich – und doch können
+      Motive, kleine Begegnungen und verborgene Verbindungen zwischen
+      ihren Welten entdeckt werden.
+    </p>
+    <p>
+      <strong>Wie Zwillinge müssen auch Geschichten nicht gleich sein,
+      um zusammenzugehören.</strong>
     </p>
   </div>
 </section>
 
-<section id="zwillingsbuecher">
-  <h2>Was sind Zwillingsbücher?</h2>
 
-  <div class="highlight">
-    <p>
-      Zwei Geschichten können unterschiedlich sein und trotzdem
-      zusammengehören. Figuren gehen ihre eigenen Wege,
-      erleben ihre eigenen Abenteuer – und manchmal kreuzen sich
-      diese Wege ganz leise.
-    </p>
-
-    <p>
-      Wer beide Geschichten kennt, kann kleine Verbindungen
-      und besondere Einzelheiten entdecken.
-    </p>
-
-    <div class="quote">
-      „Wie Zwillinge müssen auch Geschichten nicht gleich sein,
-      um zusammenzugehören.“
-    </div>
-  </div>
-</section>
-
-<section id="buecher">
-  <h2>Unsere Adventsgeschichten</h2>
-
-  <div class="books">
-
-    <article class="book">
-      <span class="label">Bereits erschienen</span>
-
-      <h3>Vier Freunde, ein Geheimnis, ein Advent wie nie zuvor</h3>
-
-      <p>
-        Vier Katzenfreunde. Ein geheimnisvoller Fund.
-        Und 24 Adventstage voller Spuren, alter Bräuche
-        und überraschender Entdeckungen.
-      </p>
-
-      <p>
-        Eine Adventsgeschichte für kleine und große
-        Geschichtensammler, Weihnachtsentdecker und Katzenfreunde.
-      </p>
-
-      <a class="button"
-         href="https://www.amazon.de/dp/B0HJB3GX5Q"
-         target="_blank"
-         rel="noopener">
-         Bei Amazon ansehen
-      </a>
-    </article>
-
-    <article class="book">
-      <span class="label">Bereits erschienen</span>
-
-      <h3>Vier Freunde, vier Wünsche, ein Advent wie nie zuvor</h3>
-
-      <p>
-        Vier Hundefreunde schreiben zu Beginn des Advents
-        ihre geheimen Wünsche auf. Die kleine Wunschschachtel
-        bleibt bis Weihnachten verschlossen.
-      </p>
-
-      <p>
-        Dazwischen liegen 24 Tage voller gemeinsamer Erlebnisse,
-        kleiner guter Taten, Weihnachtsbräuche und Freundschaft.
-      </p>
-
-      <a class="button"
-         href="https://www.amazon.de/dp/B0HJMX67ND"
-         target="_blank"
-         rel="noopener">
-         Bei Amazon ansehen
-      </a>
-    </article>
-
-  </div>
-</section>
-
-<section id="demnaechst" class="future">
-  <h2>Neue Geschichten entstehen</h2>
-
-  <p class="intro">
-    Die Welt von Zwillingsbuchwerk wächst weiter.
-    Weitere Kinderbücher sind bereits entstanden und
-    warten darauf, ihre Leserinnen und Leser kennenzulernen.
-  </p>
-
-  <div class="books">
-
-    <article class="book">
-      <span class="label">Demnächst</span>
-      <h3>Will ich heute König sein?</h3>
-      <p>
-        Eine neue Geschichte aus der Welt von Zwillingsbuchwerk.
-        Mehr wird noch nicht verraten …
-      </p>
-    </article>
-
-    <article class="book">
-      <span class="label">Demnächst</span>
-      <h3>Will ich heute Königin sein?</h3>
-      <p>
-        Eine neue Geschichte ist auf dem Weg.
-        Ein kleiner Einblick folgt bald.
-      </p>
-    </article>
-
-    <article class="book">
-      <span class="label">Demnächst</span>
-      <h3>Will ich heute Prinz sein?</h3>
-      <p>
-        Abenteuer, Entdeckungen und eine neue Geschichte,
-        die bald ihren Platz bei Zwillingsbuchwerk bekommt.
-      </p>
-    </article>
-
-    <article class="book">
-      <span class="label">In Arbeit</span>
-      <h3>Will ich heute Prinzessin sein?</h3>
-      <p>
-        Auch diese Geschichte entsteht bereits.
-        Noch bleibt ihr Abenteuer ein kleines Geheimnis.
-      </p>
-    </article>
-
-  </div>
-
-  <div class="highlight">
-    <h3>Und das ist noch nicht alles …</h3>
-    <p>
-      Weitere Kinderbuchgeschichten sind in Vorbereitung.
-      Zwillingsbuchwerk wird weiter wachsen.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Geschichten zum Entdecken</h2>
+<section id="advent" class="preview">
+  <h2>Nostalgische Adventsgeschichten in 24 Tagen</h2>
 
   <div class="intro">
     <p>
-      Zum Vorlesen, gemeinsamen Entdecken und Selberlesen:
-      Zwillingsbuchwerk verbindet Kinderbücher mit Fantasie,
-      Freundschaft, besonderen Erlebnissen und Erinnerungen,
-      die bleiben dürfen.
+      Zwei besondere Adventskalender-Geschichten begleiten Kinder und
+      Familien Tag für Tag durch den Advent. In 24 Kapiteln warten
+      Freundschaft, Geheimnisse, Wünsche, Weihnachtsbräuche,
+      kleine gute Taten und die Vorfreude auf Weihnachten.
+    </p>
+
+    <p>
+      Beide Bücher erzählen ihre eigene Geschichte – und gehören
+      gleichzeitig wie Zwillinge zusammen.
+    </p>
+  </div>
+
+  <div class="books">
+
+    <article class="book">
+      <img src="advent-geheimnis-cover.png"
+           alt="Kinderbuch Vier Freunde ein Geheimnis ein Advent wie nie zuvor von Bernadett Palfy">
+
+      <div class="book-content">
+        <span class="label">Bereits erschienen</span>
+
+        <h3>Vier Freunde, ein Geheimnis, ein Advent wie nie zuvor</h3>
+
+        <p>
+          Vier Katzenfreunde stoßen im Advent auf eine geheimnisvolle Spur.
+          Tag für Tag entdecken sie Gegenstände, Erinnerungen und alte
+          Weihnachtsbräuche. Was verbindet all diese Hinweise miteinander?
+        </p>
+
+        <p>
+          Eine nostalgisch erzählte Adventsgeschichte in 24 Tagen über
+          Freundschaft, Erinnerungen und das Bewahren besonderer
+          Weihnachtstraditionen.
+        </p>
+
+        <a class="button"
+           href="https://www.amazon.de/dp/B0HJB3GX5Q"
+           target="_blank"
+           rel="noopener">
+           Bei Amazon ansehen
+        </a>
+      </div>
+    </article>
+
+
+    <article class="book">
+      <img src="advent-wuensche-cover.png"
+           alt="Kinderbuch Vier Freunde vier Wünsche ein Advent wie nie zuvor von Bernadett Palfy">
+
+      <div class="book-content">
+        <span class="label">Bereits erschienen</span>
+
+        <h3>Vier Freunde, vier Wünsche, ein Advent wie nie zuvor</h3>
+
+        <p>
+          Vier Hundefreunde schreiben am 1. Dezember ihre geheimen Wünsche
+          auf und bewahren sie bis Weihnachten auf.
+        </p>
+
+        <p>
+          Während der 24 Adventstage erleben sie gemeinsame Wege,
+          Weihnachtsbräuche, kleine gute Taten und viele besondere
+          Augenblicke. Dabei entdecken sie, dass sich manche Wünsche
+          ganz anders erfüllen, als man zunächst erwartet.
+        </p>
+
+        <a class="button"
+           href="https://www.amazon.de/dp/B0HJMX67ND"
+           target="_blank"
+           rel="noopener">
+           Bei Amazon ansehen
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+
+  <div class="gallery">
+    <img src="advent-geheimnis-03.png"
+         alt="Nostalgische Adventsgeschichte mit vier Katzenfreunden im Schnee">
+
+    <img src="advent-wuensche-01.png"
+         alt="Vier Hundefreunde schreiben ihre Wünsche für den Advent auf">
+  </div>
+
+</section>
+
+
+<section id="palast" class="palace">
+
+  <h2>Neue Geschichten aus dem Palast</h2>
+
+  <div class="intro">
+    <p>
+      Hinter den Mauern des Palastes warten schon die nächsten
+      Geschichten von Zwillingsbuchwerk.
+    </p>
+
+    <p>
+      König, Königin, Prinz und Prinzessin erleben ihre Geschichten
+      zur gleichen Zeit. Jede Geschichte umfasst rund
+      <strong>30 Tage</strong> und zeigt die Ereignisse aus einer eigenen
+      Perspektive – mit Humor, überraschenden Situationen und
+      fantasievollen Abenteuern.
+    </p>
+  </div>
+
+  <div class="coming">
+
+    <div>
+      <span class="label">Demnächst erhältlich</span>
+      <h3>Will ich heute König sein?</h3>
+    </div>
+
+    <div>
+      <span class="label">Demnächst erhältlich</span>
+      <h3>Will ich heute Königin sein?</h3>
+    </div>
+
+    <div>
+      <span class="label">Demnächst erhältlich</span>
+      <h3>Will ich heute Prinz sein?</h3>
+    </div>
+
+    <div>
+      <span class="label">Demnächst erhältlich</span>
+      <h3>Will ich heute Prinzessin sein?</h3>
+    </div>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <img src="koenig-tomatensosse.png"
+         alt="Lustige Kinderbuchszene mit einem König und Tomatensoße im Palast">
+
+    <img src="koenigin-pferd.png"
+         alt="Königin auf einem Pferd in einer fantasievollen Kinderbuchgeschichte">
+
+    <img src="prinz-flugapparat.png"
+         alt="Prinz mit einem lustigen Flugapparat in einer Kinderbuchgeschichte">
+
+    <img src="prinzessin-sonnenuhr.png"
+         alt="Prinzessin entdeckt eine Sonnenuhr im Palast">
+
+  </div>
+
+  <div class="highlight">
+    <h3>Vier Geschichten – eine gemeinsame Zeit</h3>
+    <p>
+      König, Königin, Prinz und Prinzessin erleben ihre Abenteuer
+      innerhalb derselben Zeit im Palast. Was in einer Geschichte
+      geschieht, kann aus einer anderen Perspektive plötzlich ganz
+      anders aussehen.
+    </p>
+
+    <p>
+      Genau darin liegt ein Teil des besonderen Reizes von
+      <strong>Zwillingsbuchwerk</strong>: Geschichten können ihren
+      eigenen Weg gehen und dennoch miteinander verbunden sein.
+    </p>
+  </div>
+
+</section>
+
+
+<section>
+  <h2>Weitere Kinderbücher entstehen</h2>
+
+  <div class="intro">
+    <p>
+      Die Welt von Zwillingsbuchwerk wächst weiter.
+      Weitere Geschichten und Kinderbücher sind bereits in Vorbereitung.
+    </p>
+
+    <p>
+      Ob Advent, Weihnachten, besondere Traditionen oder fantasievolle
+      Abenteuer – im Mittelpunkt stehen Geschichten, die Kinder und
+      Erwachsene gemeinsam entdecken können.
     </p>
   </div>
 </section>
 
+</main>
+
+
 <footer>
-  <strong>Zwillingsbuchwerk</strong>
-  <p>Kinderbücher · Geschichten · Abenteuer · besondere Buchwelten</p>
-  <p>© 2026 Zwillingsbuchwerk</p>
+  <p><strong>Zwillingsbuchwerk</strong></p>
+  <p>Kinderbücher und Geschichten von Bernadett Palfy</p>
+  <p>© 2026 Bernadett Palfy · Alle Rechte vorbehalten</p>
 </footer>
 
 </body>
